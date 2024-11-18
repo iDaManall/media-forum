@@ -38,11 +38,6 @@ const ReadPosts = (props) => {
 
     return (
         <div className="ReadPosts">
-            <div className="sort-options">
-                <span>Order By: </span>
-                <button onClick={() => handleSortChange('created_at')}>Most Recent</button>
-                <button onClick={() => handleSortChange('likeCount')}>Most Upvotes</button>
-            </div>
             <div className="search-bar">
                 <input
                     type="text"
@@ -51,6 +46,13 @@ const ReadPosts = (props) => {
                     onChange={handleSearchChange}
                 />
             </div>
+            
+            <div className="sort-options">
+                <span>Order By: </span>
+                <button onClick={() => handleSortChange('created_at')}>Most Recent</button>
+                <button onClick={() => handleSortChange('likeCount')}>Most Upvotes</button>
+            </div>
+            
             <div className="posts-list">
                 {filteredPosts && filteredPosts.length > 0 ? (
                     filteredPosts.map((post) => (
