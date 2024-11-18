@@ -30,7 +30,7 @@ const CreatePost = () => {
     return (
         <div>
             <form>
-                <label for="name">Name</label> <br />
+                <label for="name">Title</label> <br />
                 <input type="text" id="name" name="name" onChange={handleChange} /><br />
                 <br/>
 
