@@ -6,7 +6,7 @@ import { supabase } from '../client'
 const EditPost = ({data}) => {
 
     const {id} = useParams();
-    const [post, setPost] = useState({id: null, name: "", genre: "", personal_thoughts: ""});
+    const [post, setPost] = useState({id: null, name: "", genre: "", personal_thoughts: "", imageUrl: ""});
 
     useEffect(() => {
         const fetchPost = async () => {
@@ -40,7 +40,7 @@ const EditPost = ({data}) => {
         event.preventDefault();
         await supabase
         .from('Posts')
-        .update({ name: post.name, genre: post.genre,  personal_thoughts: post.personal_thoughts})
+        .update({ name: post.name, genre: post.genre, personal_thoughts: post.personal_thoughts, imageUrl: post.imageUrl })
         .eq('id', id);
 
         window.location = "/";
@@ -108,6 +108,10 @@ const EditPost = ({data}) => {
                 </label>
                 </div>
                 <br/>
+
+                <label htmlFor="imageUrl">Image URL (optional)</label><br />
+                <input type="text" id="imageUrl" name="imageUrl" value={post.imageUrl} onChange={handleChange} /><br />
+                <br />
 
                 <label for="personal_thoughts">Personal Thoughts</label><br />
                 <textarea rows="5" cols="50" id="personal_thoughts" name="personal_thoughts" value={post.personal_thoughts} onChange={handleChange} >

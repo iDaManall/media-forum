@@ -105,6 +105,13 @@ const PostDetail = () => {
       <p>Percentage of Total Likes: {likePercentage}%</p>
       {isPopular && <p>This post is really popular!</p>} */}
       <p>{post.personal_thoughts}</p>
+      {post.imageUrl && (
+        <>
+          <img src={post.imageUrl} alt="Preview" className="image-preview" />
+          <br />
+          <br />
+        </>
+      )}
       <button className="likeButton" onClick={updateCount} >👍 {count} upvotes</button>
 
       <div className="comments-section">

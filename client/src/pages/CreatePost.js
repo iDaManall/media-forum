@@ -4,7 +4,7 @@ import { supabase } from '../client';
 
 const CreatePost = () => {
 
-    const [post, setPost] = useState({name: "", genre: "", personal_thoughts: ""})
+    const [post, setPost] = useState({name: "", genre: "", personal_thoughts: "", imageUrl: "" })
 
     const handleChange = (event) => {
         const {name, value} = event.target;
@@ -13,14 +13,14 @@ const CreatePost = () => {
                 ...prev,
                 [name]:value,
             }
-        })
+        });
     }
 
     const createPost = async (event) => {
         event.preventDefault();
         await supabase
             .from('Posts')
-            .insert({name: post.name, genre: post.genre, personal_thoughts: post.personal_thoughts})
+            .insert({name: post.name, genre: post.genre, personal_thoughts: post.personal_thoughts, imageUrl: post.imageUrl })
             .select();
 
         window.location = "/";
@@ -78,6 +78,10 @@ const CreatePost = () => {
                     Other
                 </label>
                 </div>
+                <br />
+
+                <label htmlFor="imageUrl">Image URL (optional)</label><br />
+                <input type="text" id="imageUrl" name="imageUrl" onChange={handleChange} /><br />
                 <br />
 
                 <label for="personal_thoughts">Personal Thoughts</label><br />

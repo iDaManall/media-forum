@@ -92,3 +92,11 @@ textarea {
 .moreButton:hover {
   cursor: pointer;
 }
+
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}

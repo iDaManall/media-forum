@@ -1,11 +1,13 @@
 input {
     margin-top: 10px;
-    width: 100%;
+    width: 99%;
     height: 45px;
     border-radius: 8px;
     border: 1px solid transparent;
     font-size: 20px;
     padding-left: 10px;
+    background-color: #2e2e2e;
+    color: white;
 }
 
 label {
@@ -14,7 +16,7 @@ label {
 
 textarea {
     border-radius: 8px;
-    width: 100%;
+    width: 98.3%;
     border: 1px solid transparent;
     font-size: 20px;
     font-family: inherit;
