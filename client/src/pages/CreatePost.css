@@ -1,0 +1,64 @@
+input {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+label {
+    font-size: 20px;
+}
+
+textarea {
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color:white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin-top: 20px;
+  }
+
+input[type=submit]:hover {
+    border-color: #646cff;
+}
+
+/* Additional styles for radio buttons */
+/* The radio-group class uses flexbox to align the radio buttons and labels horizontally and adds spacing between them. */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* The radio-group label class aligns the radio buttons and labels vertically and adjusts the font size. */ 
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px; /* Adjust font size if needed */
+}
+
+/* The radio-group input[type="radio"] class ensures the radio button size is appropriate and adds margin to the right of the radio buttons. */
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+    width: auto; /* Ensure the radio button size is appropriate */
+    height: auto; /* Ensure the radio button size is appropriate */
+}

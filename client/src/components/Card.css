@@ -1,0 +1,70 @@
+.Card {
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(153, 153, 153, 0.497);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    /* width: 40vw; */
+    /* text-align: center; */
+}
+
+.postTime {
+    font-size: 15px;
+    color: #d8d8d8;
+    margin-bottom: 8px;
+}
+
+.name {
+    color:white;
+    /* padding-left:30px; */
+    font-size: 22px;
+}
+
+.genre {
+    color:white;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.personal_thoughts {
+    color:white;  
+    text-align: justify;
+    /* text-align: center;
+    padding-left: 30px; */
+    padding-right: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* .likeButton {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color:white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+.likeButton:hover {
+    border-color: #646cff;
+  } */
+
+  .likeCount {
+    font-size: 15px;
+  }
+
+.moreButton {
+    width: 30px;
+    float:right;
+
+}
+.moreButton:hover {
+    cursor: pointer;
+}
