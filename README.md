@@ -1,4 +1,4 @@
-Link to Deployed Website: https://media-forum.netlify.app/
+<!-- Link to Deployed Website: https://media-forum.netlify.app/ -->
 
 # Web Development Final Project - *Media Forum*
 
